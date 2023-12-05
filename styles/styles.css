@@ -12,9 +12,10 @@
 
  :root {
   /* colors */
-  --link-color: #035fe6;
-  --link-hover-color: #136ff6;
+  --link-color: #ffea00;
+  --link-hover-color: #cfc01ac0;
   --background-color: #fff;
+  --anchor-link-color: #1971ED;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
   --text-color: #000;
@@ -130,13 +131,13 @@ main pre {
 }
 
 a:any-link {
-  color: var(--link-color);
+  color: var(--anchor-link-color);
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: var(--link-hover-color);
+  color: var(--anchor-link-color);
 }
 
 /* buttons */
@@ -146,18 +147,17 @@ a.button:any-link, button {
   box-sizing: border-box;
   text-decoration: none;
   border: 2px solid transparent;
-  padding: 5px 30px;
+  padding: 8px 30px;
   text-align: center;
   font-style: normal;
   font-weight: 600;
   cursor: pointer;
-  color: var(--background-color);
+  color: var(--text-color);
   background-color: var(--link-color);
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 30px;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
