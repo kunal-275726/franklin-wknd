@@ -421,9 +421,11 @@ async function createForm(formURL, block) {
 }
 
 export default async function decorate(block) {
+  debugger;
   const formLink = block.querySelector('a[href$=".json"]');
   if (formLink) {
     const form = await createForm(formLink.href, block);
+
     formLink.replaceWith(form);
 
     const config = readBlockConfig(block);
