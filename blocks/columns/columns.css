@@ -31,3 +31,20 @@
     order: unset;
   }
 }
+
+.contributors img{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.contributors .columns div div{
+  display: flex;
+  flex-direction: column;
+}
+.contributors .columns p {
+  margin: 0;
+}
+.contributors .columns div {
+  align-items: flex-start;
+}
